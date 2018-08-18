@@ -1,14 +1,14 @@
 {
   "name": "draft-js-multiline-list-item-plugin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Multiline list item Plugin for DraftJS",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "compile": "npm run build",
-    "precompile": "npm run clean && npm run prettify",
+    "precompile": "npm run clean",
     "clean": "rm -rf ./lib/*",
-    "prepublish": "npm run compile",
+    "prepublish": "npm run lint && npm run prettify && npm run compile",
     "prettify": "prettier src/index.js --write",
     "lint": "eslint 'src/*.js'",
     "test": "jest"
@@ -34,7 +34,10 @@
   "peerDependencies": {
     "draft-js": ">=0.10.1"
   },
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrey-semin/draft-js-multiline-list-item-plugin.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
