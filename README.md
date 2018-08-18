@@ -11,6 +11,8 @@ This plugin adds behaviour to the editor to stay on the same list item and inclu
 npm i --save draft-js-multiline-list-item-plugin
 ```
 
+then import the plugin creator function
+
 ```js
 import createMultilineListItemPlugin from 'draft-js-multiline-list-item-plugin'
 const multiLineListItemPlugin = createMultilineListItemPlugin()
