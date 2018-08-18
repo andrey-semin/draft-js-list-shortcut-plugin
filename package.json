@@ -1,7 +1,7 @@
 {
-  "name": "draft-js-multiline-list-item",
+  "name": "draft-js-multiline-list-item-plugin",
   "version": "0.0.1",
-  "description": "Multiline list item Pluginfor DraftJS",
+  "description": "Multiline list item Plugin for DraftJS",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
