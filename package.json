@@ -4,7 +4,7 @@
   "description": "Multiline list item Plugin for DraftJS",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "babel src --ignore __tests__ --out-dir lib",
     "compile": "npm run build",
     "precompile": "npm run clean",
     "clean": "rm -rf ./lib/*",
